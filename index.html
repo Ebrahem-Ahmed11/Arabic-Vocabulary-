@@ -1,0 +1,48 @@
+<script type="importmap">
+  {
+    "imports": {
+      "@google/genai": "https://esm.sh/@google/genai@^0.7.0"
+    }
+  }
+  </script>
+  <!-- Add Google Fonts Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500&family=Noto+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+
+<header class="app-header">
+    <h1>Arabic Flashcard Factory 🏭</h1>
+    <p>
+      Instantly generate beautiful, interactive flashcards from a single Arabic word or a category.
+    </p>
+</header>
+
+<main class="container">
+    <div class="input-section">
+      <div class="input-container">
+        <input
+          type="text"
+          id="wordInput"
+          placeholder="أدخل كلمة أو فئة (e.g., سيارة or فواكه)"
+          dir="rtl"
+          aria-label="Arabic word or category input"
+        />
+        <button id="generateButton">Generate</button>
+      </div>
+      <div class="examples">
+        <span>Try an example:</span>
+        <button class="example-btn" data-value="حيوانات بحرية">Sea Animals</button>
+        <button class="example-btn" data-value="سعيد">Happy</button>
+        <button class="example-btn" data-value="ألوان">Colors</button>
+      </div>
+    </div>
+    <div id="loadingMessage" class="loading-message" aria-live="polite"></div>
+    <div id="errorMessage" class="error-message" aria-live="assertive"></div>
+    <div id="resultContainer" class="result-container">
+      <!-- Generated image and text will appear here -->
+    </div>
+</main>
+
+<footer class="app-footer">
+    <div>Made by M. Ebrahem Ahmed</div>
+</footer>

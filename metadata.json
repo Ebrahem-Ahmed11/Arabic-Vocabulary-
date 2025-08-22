@@ -1,0 +1,5 @@
+{
+  "name": "Arabic Flashcard Factory",
+  "description": "Instantly generate beautiful, interactive flashcards from a single Arabic word or a category. Powered by Gemini.",
+  "requestFramePermissions": []
+}
